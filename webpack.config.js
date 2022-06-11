@@ -6,7 +6,7 @@ module.exports = {
 	entry: './src/index.js',
 	output: {
 		path: path.resolve(__dirname, 'dist'),
-		filename: 'ReactShop/bundle.js',
+		filename: 'bundle.js',
 		publicPath: '/ReactShop/',
 	},
 	mode: 'development',
@@ -58,7 +58,7 @@ module.exports = {
 				]
 			},
 			{
-				test: /\.(png|jp(e*)g|svg|gif)$/,
+				test: /\.(png|jp(e*)g|svg|gif|web)$/,
 				use: [
 					{
 						loader: 'file-loader',
